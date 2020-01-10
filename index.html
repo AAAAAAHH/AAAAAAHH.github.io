@@ -26,7 +26,11 @@ function genRand(min, max, decimalPlaces) {
 }
 </script>
 
+<br>
+
 <b>2020 Percentage Finished</b>
+
+<br>
 
 <script type="text/javascript">
   var today = new Date();
@@ -34,7 +38,7 @@ function genRand(min, max, decimalPlaces) {
   var theDay = Math.round(((today - first) / 1000 / 60 / 60 / 24) + .5, 0);
   var yearPercent = ((theDay / 366) * 100)
   var percent = yearPercent.toFixed(2)
-  alert("We are " + percent + "% through the year!!");
+  document.log("We are " + percent + "% through the year!!");
 </script>
   
 </body>
