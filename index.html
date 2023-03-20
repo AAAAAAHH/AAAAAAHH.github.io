@@ -55,5 +55,22 @@ function genRand(min, max, decimalPlaces) {
 <sub>Ver. 1.0</sub>
 <button onclick="window.open('SpaceDefender.rar')">Download</button>
   
+<br>
+
+<p> </p>
+  
+<div>
+  <button type="randomSong">Random Music</button>
+  <input "randomSong" id="randomSong">
+</div>
+
+<script>
+
+var song = Array("song1", "song2", "song3", "song4", "song5", "song6");
+
+var randomSong = song[Math.floor(Math.random()*song.length)];
+
+</script>
+  
 </body>
 </html>
