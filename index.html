@@ -1,67 +1,7 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<b>Divergence Meter</b>
-<p>Divergence meter program from Steins;Gate.</p>
-<p>Click the button to change the world line value.</p>
-<i>Python Version</i>
-<br>
-<sub>Ver. 0.2.2</sub>
-<button onclick="window.open('Divergence Meter.rar')">Download</button>
-<p> </p>
-<i>Web Version</i>
-<br>
-<form>
-  <input type="button" value="Click me" onclick="genRand(0.337187, 1.130426, 6)">
-<div id="result"></div>
-</form>
-  
-<script type="text/javascript">
-function genRand(min, max, decimalPlaces) {  
-  var rand = Math.random()*(max-min) + min;
-  var power = Math.pow(10, decimalPlaces);
-  var result = Math.floor(rand*power) / power;
-  document.getElementById("result").innerHTML = result;
-}
-</script>
-
-<br>
-
-<b>2020 Percentage Finished</b>
-
-<p> </p>
-
-<script type="text/javascript">
-  var today = new Date();
-  var first = new Date(today.getFullYear(), 0, 1);
-  var theDay = Math.round(((today - first) / 1000 / 60 / 60 / 24) + .5, 0);
-  var yearPercent = ((theDay / 366) * 100)
-  var percent = yearPercent.toFixed(2)
-  document.write("We are " + percent + "% through the year!!");
-</script>
-
-<br>
-
-<p> </p>
-  
-<b>Space Defender</b>
-  
-<p> </p>
-  
-<p>My first attempt at making a game with python.</p>
-<i>Version</i>
-<br>
-<sub>Ver. 1.0</sub>
-<button onclick="window.open('SpaceDefender.rar')">Download</button>
-  
-<br>
-
-<p> </p>
-
-<b>PLU</b>
-  
-<div class="modal-container" id="score-modal">
+<body onload="NextQuestion(0)">
+    <main>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
 
             <div class="modal-content-container">
 
@@ -140,8 +80,6 @@ function genRand(min, max, decimalPlaces) {
             </div>
 
         </div>
-  
-  <script src="index.js"></script>
-  
+    </main>
+    <script src="index.js"></script>
 </body>
-</html>
